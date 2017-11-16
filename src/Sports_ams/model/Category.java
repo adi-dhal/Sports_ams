@@ -1,18 +1,8 @@
-package Sports_ams.data_model;
+package Sports_ams.model;
 
 public class Category {
-	
 	int category_id;
 	String category_name;
-	public Category(String category_name) {
-		super();
-		this.category_name = category_name;
-	}
-	public Category(int id, String category_name) {
-		super();
-		this.category_id = id;
-		this.category_name = category_name;
-	}
 	public int getCategory_id() {
 		return category_id;
 	}
@@ -23,6 +13,15 @@ public class Category {
 		return category_name;
 	}
 	public void setCategory_name(String category_name) {
+		this.category_name = category_name;
+	}
+	public Category(int category_id, String category_name) {
+		super();
+		this.category_id = category_id;
+		this.category_name = category_name;
+	}
+	public Category(String category_name) {
+		super();
 		this.category_name = category_name;
 	}
 	
